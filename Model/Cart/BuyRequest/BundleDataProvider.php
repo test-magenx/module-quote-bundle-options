@@ -40,7 +40,6 @@ class BundleDataProvider implements BuyRequestDataProviderInterface
             if ($optionType == self::OPTION_TYPE) {
                 $bundleOptionsData['bundle_option'][$optionId] = $optionValueId;
                 $bundleOptionsData['bundle_option_qty'][$optionId] = $optionQuantity;
-                $bundleOptionsData['bundle_options_data'][$optionId][$optionValueId] = $optionQuantity;
             }
         }
         //for bundle options with custom quantity
@@ -58,7 +57,6 @@ class BundleDataProvider implements BuyRequestDataProviderInterface
                 $optionQuantity = $option->getValue();
                 $bundleOptionsData['bundle_option'][$optionId] = $optionValueId;
                 $bundleOptionsData['bundle_option_qty'][$optionId] = $optionQuantity;
-                $bundleOptionsData['bundle_options_data'][$optionId][$optionValueId] = $optionQuantity;
             }
         }
 
